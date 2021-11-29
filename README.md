@@ -87,3 +87,11 @@ sudo apt-get install verilator
 ## Section 2
 
 ### Blinking an LED
+```
+verilator -Wall --cc --exe --build main.cpp led.v
+```
+
+### UART
+```
+verilator -Wall --cc --exe --trace --build main.cpp led.v
+```
